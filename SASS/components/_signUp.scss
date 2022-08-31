@@ -1,0 +1,58 @@
+/* ========== start sign up section ==========*/
+@use "../helpers/variables" as *;
+.signUp {
+    background-color: $dark-blue-main-bg;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__description {
+        width: 700px;
+        max-width: 100%;
+        background-color: $dark-blue;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        text-align: center;
+        color: $white;
+        padding: 30px 20px;
+        z-index: 1;
+        position: relative;
+        top: 80px;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+        h2 {
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.5rem;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            column-gap: 20px;
+            input {
+                outline: none;
+                border: none;
+                border-radius: 25px;
+                -webkit-border-radius: 25px;
+                -moz-border-radius: 25px;
+                -ms-border-radius: 25px;
+                -o-border-radius: 25px;
+            }
+            input[type="email"] {
+                background-color: $white;
+                width: 70%;
+                padding: 13px;
+            }
+            input[type="submit"] {
+                width: fit-content;
+                padding: 15px 18px;
+            }
+        }
+    }
+}
+/* ========== end sign up section ==========*/

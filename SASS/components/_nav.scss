@@ -1,0 +1,27 @@
+/* ========== start nav style ==========*/
+@use "../helpers/variables" as *;
+.nav {
+    .container {
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 130px;
+        height: auto;
+        cursor: pointer;
+    }
+    .list {
+        display: flex;
+        column-gap: 1.5rem;
+        &__link {
+            color: $white;
+            font-family: $heading-font-family;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+/* ========== end nav style ==========*/

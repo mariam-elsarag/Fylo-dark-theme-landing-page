@@ -1,0 +1,29 @@
+/*========== Global style ==========*/
+@use "../helpers/variables" as *;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font: {
+        size: 14px;
+        family: $body-font-family;
+    }
+    background-color: $dark-blue;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font-family;
+}
+/*========== End global style ==========*/

@@ -1,0 +1,37 @@
+/* ========== start features section ==========*/
+@use "../helpers/variables" as *;
+.features {
+    background: $dark-blue-main-bg;
+    position: relative;
+    color: $white;
+    .container {
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    &__content {
+        text-align: center;
+        margin: 30px 0;
+        &-icon {
+            width: 70px;
+            height: auto;
+            margin-bottom: 25px;
+        }
+        &-description {
+            h2 {
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+            p {
+                color: $white;
+                line-height: 1.5rem;
+                font-size: 13px;
+                width: 328px;
+                max-width: 100%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+/* ========== end features section ==========*/

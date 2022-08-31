@@ -1,0 +1,62 @@
+/* ========== start testimonials section ==========*/
+@use "../helpers/variables" as *;
+.testimonials {
+    background-color: $dark-blue-main-bg;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .container {
+        position: relative;
+        &::after {
+            content: url("../../images/bg-quotes.png");
+            position: absolute;
+            top: -38px;
+            left: -10px;
+            z-index: 1;
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        background: $dark-blue-testimonials-bg;
+        color: $white;
+        padding: 25px 15px;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+        box-shadow: 2px 2px 3px hsl(217, 27%, 20%);
+
+        p {
+            line-height: 1.3rem;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+        &-information {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+            .description {
+                display: flex;
+                flex-direction: column;
+                row-gap: 5px;
+
+                span {
+                    font-size: 13px;
+                    color: #f3f3f3;
+                }
+            }
+        }
+    }
+}
+/* ========== end testimonials section ==========*/

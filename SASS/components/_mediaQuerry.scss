@@ -1,0 +1,126 @@
+/* large screen*/
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/*medium screen*/
+@media screen and (max-width: 991px) {
+    .productive {
+        &__container {
+            flex-direction: column;
+
+            row-gap: 3.5rem;
+            figure,
+            &-content {
+                width: 100%;
+            }
+            figure {
+                text-align: center;
+            }
+            &-content {
+                h2 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 935px) {
+    /* footer*/
+    .footer {
+        &__logo {
+            top: 50px;
+        }
+        &__row {
+            margin: 50px 0 0;
+        }
+    }
+}
+/*small screen*/
+@media screen and (max-width: 780px) {
+    .productive {
+        &__container {
+            &-content {
+                h2 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    /*sign up*/
+    .signUp {
+        &__description {
+            top: 90px;
+        }
+        form {
+            flex-direction: column;
+            row-gap: 20px;
+            input[type="email"],
+            input[type="submit"] {
+                width: 100%;
+            }
+        }
+    }
+    /* footer*/
+    .footer {
+        &__logo {
+            top: 80px;
+            left: 20px;
+            margin-bottom: 7rem;
+        }
+        &__row {
+            flex-direction: column;
+            margin: unset;
+            &-social-links {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+/* Extera small screen*/
+@media screen and (max-width: 375px) {
+    .nav {
+        &__logo {
+            width: 90px;
+        }
+        .list {
+            column-gap: 0.8rem;
+            font-size: 0.8rem;
+        }
+    }
+    .landing {
+        &__content {
+            &-heading {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+            &-description {
+                width: 318px;
+                max-width: 100%;
+                line-height: 1.5rem;
+            }
+        }
+        .curvy-desktop-img {
+            display: none;
+        }
+    }
+    .features {
+        margin-top: 40px;
+    }
+    .productive {
+        &__container {
+            &-content {
+                h2 {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

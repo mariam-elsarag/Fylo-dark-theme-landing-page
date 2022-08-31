@@ -1,0 +1,49 @@
+/* ========== Start layout ==========*/
+@use "../helpers/variables" as *;
+.container {
+    max-width: 968px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 15px;
+}
+.attribution a {
+    color: #fff;
+    opacity: 0.8;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    &:hover {
+        color: hsl(176, 68%, 64%);
+    }
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+section {
+    padding: 50px 0;
+}
+.error {
+    color: $error;
+    display: none;
+    margin-bottom: 0 !important;
+    text-align: left;
+    margin-left: 13px;
+    &.active {
+        display: block;
+    }
+}
+/* ========== end layout ==========*/
